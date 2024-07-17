@@ -1,1 +1,145 @@
+/* Alinierea elementelor*/
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#entire-form {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px;
+}
+
+#container-with-2semi-containers {
+    display: flex;
+    flex-direction: row;
+}
+
+.semi-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#fname, #lname, #email, #phone {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#country, #address, #subject {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+#submit-button {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+/* Stilizarea elementelor (culorile) */
+
+body {
+    background-color: #a161dd;
+}
+
+h1 {
+    color: white;
+}
+
+#entire-form {
+    background-color: white;
+}
+
+#entire-form input{
+    background-color: #6d1bb9;
+    border: none;
+    border-radius: 3px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white; /* Change this to your desired color */
+}
+
+#country select, 
+#address input {
+    background-color: #430b74;
+    border:none;
+    border-radius: 3px;
+    color: white;
+}
+
+#subject textarea{
+    background-color: #3b0768;
+    border:none;
+    border-radius: 3px;
+    color: white;
+    resize: none;
+}
+
+#submit-button button {
+    background-color: #410179;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    height: 40px;
+    font-weight: bold;
+}
+
+#submit-button button:hover {
+    background-color: #8531d1;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+/*------- Custom dropdown------*/
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-button {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    background-color: #2a0950;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f1f1f1;
+}
+
+.flag {
+    margin-right: 10px;
+}
